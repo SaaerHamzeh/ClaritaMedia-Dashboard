@@ -1,0 +1,227 @@
+/* Style for form container */
+.crud-form {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+    margin: 0px 0px;
+    /* background-color: #f44336; */
+}
+
+.crud-form .left-side-form {
+    background-color: rgba(48, 35, 118, 0.1);
+    border-radius: 10px;
+    padding: 7px;
+    width: 325px;
+
+}
+
+.crud-form .right-side-form {
+    background-color: rgb(48, 35, 118, 0.1);
+    border-radius: 10px;
+    padding: 7px;
+    width: 325px;
+    
+}
+
+.col-3 {
+    width: 750px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form headings */
+h2 {
+    margin-top: 0;
+}
+
+/* Style for form inputs and labels */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+/* input[type="tel"], */
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select option {
+    margin: 5px 2px;
+    text-align: center;
+    color: #1A1654;
+    font-weight: bold;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-right: 3px;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+
+    background-color: #1A1654;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #1A1654;
+    border: solid;
+}
+
+hr {
+    border: #1A1654 1px solid;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .col-3 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    input[type="number"],
+    input[type="tel"],
+    select {
+        width: calc(100% - 16px);
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* ___________________pop_up_divs_style_________________________ */
+
+/* إخفاء النماذج افتراضياً */
+.popupForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+/* تغبيش الخلفية */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+/* زر إغلاق */
+.closeBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    float: right;
+}
+
+/* __________________buttons_style____________________ */
+
+.btn .showFormBtn {
+    padding: 8px 10px;
+    font-weight: bolder;
+    background-color: #1A1654;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn .showFormBtn:hover {
+    background-color: #ffffff;
+    color: #1A1654;
+    border: #1A1654 1px solid;
+}
+
+/* ________________________________________________________________________ */
+
+#admin-logout {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#admin-logout a{
+    margin-top: 15px;
+    margin-right: 5px;
+    color: #3498db;
+}
+
+#admin-logout a:hover{
+    color: #1A1654;
+}
+/* تحديد نمط الدائرة */
+.admin-circle {
+    width: 50px;
+    /* عرض الدائرة */
+    height: 50px;
+    /* ارتفاع الدائرة */
+    border-radius: 50%;
+    /* يجعل العنصر دائري */
+    background-color: #1A1654;
+    /* لون الخلفية */
+    color: white;
+    /* لون النص */
+    display: flex;
+    /* استخدام Flexbox لتوسيط النص */
+    align-items: center;
+    /* توسيط عمودي */
+    justify-content: center;
+    /* توسيط أفقي */
+    font-size: 20px;
+    /* حجم الخط */
+    font-weight: bold;
+    /* جعل الخط عريض */
+    text-transform: uppercase;
+    /* تحويل النص إلى أحرف كبيرة */
+    margin: 0px 0px 0px 0px;
+    /* إضافة بعض الهوامش حول الدائرة */
+}
+
+#header-name {
+    color: #971D1E;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    /* background-color: aqua; */
+    margin: 25px 0px 0px 0px;
+    display: inline-block;
+    width: 470px;
+
+}

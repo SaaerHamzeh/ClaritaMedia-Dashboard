@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #971D1E;
+    font-weight: bolder;
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.signup-container form button {
+    padding: 10px;
+    background-color: #286090;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-container form button:hover {
+    background-color: #1A1652;
+    color: #ffffff;
+}
+
+
+.signup-container .main-button {
+    background-color: #286090;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.signup-container .main-button:hover {
+    background-color: #1A1652;
+
+}
+
+.section {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.register_span {
+    margin: 0px 0px 10px 0px;
+    font-weight: 600;
+    font-size: medium;
+    text-shadow: 1px 1px 7px rgb(151, 151, 235);
+}
+#hr{
+    border: 1px solid #1A1652;
+    width: 290px;
+}
+/* __________________________navbar_______________________________ */
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-name {
+    color: #971D1E;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    /* background-color: aqua; */
+    margin: 25px 0px 0px 0px;
+    display: inline-block;
+    width: 470px;
+
+}
